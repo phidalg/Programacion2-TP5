@@ -1,0 +1,32 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>250</x><y>260</y><w>460</w><h>200</h></coordinates><panel_attributes>CuentaBancaria
+--
+- cbu: String
+- saldo: double
+- claveSeguridad: ClaveSeguridad
+- titular: Titular
+--
++ CuentaBancaria(cbu: String, saldo: double, password: String): CuentaBancaria
++ setTitular(titular: Titular): void
++ getCbu(): String
++ getSaldo(): double
++ getClaveSeguridad(): ClaveSeguridad
++ getTitular(): Titular</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>250</x><y>520</y><w>460</w><h>160</h></coordinates><panel_attributes>Titular
+--
+- nombre: String
+- dni: String
+- cuentaBancaria: CuentaBancaria
+--
++ Titular(nombre: String, dni: String): Titular
++ setCuentaBancaria(cuenta: CuentaBancaria): void
++ getNombre(): String
++ getDni(): String
++ getCuentaBancaria(): CuentaBancaria</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>250</x><y>60</y><w>460</w><h>140</h></coordinates><panel_attributes>ClaveSeguridad
+--
+- codigo: int
+- ultimaModificacion: String
+
+--
++ ClaveSeguridad(password: String) : ClaveSeguridad
++ getCodigo(): int
++ getUltimaModificacion(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>190</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=-&gt;&gt;&gt;&gt;&gt;</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>450</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;-&gt;
+</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element></diagram>

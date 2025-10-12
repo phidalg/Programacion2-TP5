@@ -1,0 +1,31 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>250</x><y>272</y><w>460</w><h>170</h></coordinates><panel_attributes>FirmaDigital
+--
+- codigoHash: int
+- fecha: String
+- usuario: Usuario
+
+--
++ FirmaDigital(usuario: Usuario): FirmaDigital
++ getCodigoHash(): int
++ getFecha(): String
++ getUsuario(): Usuario</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>250</x><y>512</y><w>460</w><h>170</h></coordinates><panel_attributes>Documento
+--
+- titulo: String
+- contenido: String
+- firmaDigital: FirmaDigital
+
+--
++ Documento(titulo: String, contenido: String, usuario: Usuario): Documento
++ getTitulo(): String
++ getContenido(): String
++ getFirmaDigital(): FirmaDigital
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>250</x><y>62</y><w>460</w><h>140</h></coordinates><panel_attributes>Usuario
+--
+- nombre: String
+- email: String
+
+--
++ Usuario(nombre: String, email: String) : Usuario
++ getNombre(): String
++ getEmail(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>192</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=-&gt;&gt;&gt;&gt;</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>432</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=-&gt;&gt;&gt;&gt;&gt;
+</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element></diagram>

@@ -1,0 +1,35 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>230</x><y>110</y><w>550</w><h>190</h></coordinates><panel_attributes>TarjetaDeCredito
+--
+- numero: String
+- fechaVencimiento: String
+- cliente: Cliente
+- banco: Banco
+--
++ TarjetaDeCredito(numero: String, fechaVencimiento: String, banco: Banco): TarjetaDeCredito
++ setCliente(cliente: Cliente): void
++ getNumero(): String
++ getFechaVencimiento(): String
++ getCliente(): Cliente
++ getBanco(): Banco
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>140</x><y>410</y><w>320</w><h>160</h></coordinates><panel_attributes>Cliente
+--
+- nombre: String
+- dni: String
+- tarjetaDeCredito: TarjetaDeCredito
+--
++ Cliente(dni: String, nombre: String): Cliente
++ setTarjetaDeCredito(tarjeta: TarjetaDeCredito): void
++ getNombre(): String
++ getDni(): String
++ getTarjetaDeCredito(): TarjetaDeCredito
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>530</x><y>410</y><w>310</w><h>120</h></coordinates><panel_attributes>Banco
+--
+- nombre: String
+- cuit: String
+--
++ Banco(nombre: String, cuit: String) : Banco
++ getNombre(): String
++ getCuit(): String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>290</y><w>130</w><h>140</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>110;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>290</y><w>120</w><h>140</h></coordinates><panel_attributes>lt=-&gt;&gt;&gt;&gt;</panel_attributes><additional_attributes>100;120;10;10</additional_attributes></element></diagram>
