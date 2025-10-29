@@ -11,6 +11,8 @@ import edu.utn.ejercicio3.Libro;
 import edu.utn.ejercicio4.Banco;
 import edu.utn.ejercicio4.Cliente;
 import edu.utn.ejercicio4.TarjetaDeCredito;
+import edu.utn.ejercicio5.Computadora;
+import edu.utn.ejercicio5.Propietario;
 
 /**
  *
@@ -47,7 +49,11 @@ public class TP5 {
         cliente1.setTarjetaDeCredito(tarjeta1);
         System.out.println(cliente1);
         
-        
+        System.out.println("\nEjercicio 5:\n");
+        Propietario propietario1 = new Propietario("Fulano", "12345678");
+        Computadora computadora1 = new Computadora("adfaasdaa", "963852", "400", "abc");
+        propietario1.setComputadora(computadora1);
+        System.out.println(computadora1);
     }
     
 }
