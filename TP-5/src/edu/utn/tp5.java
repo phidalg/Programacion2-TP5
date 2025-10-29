@@ -8,6 +8,9 @@ import edu.utn.ejercicio2.Usuario;
 import edu.utn.ejercicio3.Autor;
 import edu.utn.ejercicio3.Editorial;
 import edu.utn.ejercicio3.Libro;
+import edu.utn.ejercicio4.Banco;
+import edu.utn.ejercicio4.Cliente;
+import edu.utn.ejercicio4.TarjetaDeCredito;
 
 /**
  *
@@ -36,6 +39,14 @@ public class TP5 {
         Libro libro1 = new Libro("Libro 1", "00000001", editorial1);
         libro1.setAutor(autor1);
         System.out.println(libro1);
+        
+        System.out.println("\nEjercicio 4:\n");
+        Banco banco1 = new Banco("Banco Rico", "30-12345678-3");
+        TarjetaDeCredito tarjeta1 = new TarjetaDeCredito(banco1, "31/12/2030", "1234567890");
+        Cliente cliente1 = new Cliente("Fulano", "12345678");
+        cliente1.setTarjetaDeCredito(tarjeta1);
+        System.out.println(cliente1);
+        
         
     }
     
