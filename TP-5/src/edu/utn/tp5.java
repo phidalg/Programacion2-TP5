@@ -15,6 +15,9 @@ import edu.utn.ejercicio5.Computadora;
 import edu.utn.ejercicio5.Propietario;
 import edu.utn.ejercicio6.Mesa;
 import edu.utn.ejercicio6.Reserva;
+import edu.utn.ejercicio7.Conductor;
+import edu.utn.ejercicio7.Motor;
+import edu.utn.ejercicio7.Vehiculo;
 
 /**
  *
@@ -65,7 +68,11 @@ public class TP5 {
         System.out.println(reserva1);
         
         System.out.println("\nEjercicio 7:\n");
-        
+        Motor motor1 = new Motor("V8", "123-456-789");
+        Vehiculo vehiculo1 = new Vehiculo("ABC-123", "Renault 12", motor1);
+        Conductor conductor1 = new Conductor("Fulano", "123456");
+        vehiculo1.setConductor(conductor1);
+        System.out.println(conductor1);
         
         System.out.println("\nEjercicio 8:\n");
         
