@@ -13,6 +13,8 @@ import edu.utn.ejercicio4.Cliente;
 import edu.utn.ejercicio4.TarjetaDeCredito;
 import edu.utn.ejercicio5.Computadora;
 import edu.utn.ejercicio5.Propietario;
+import edu.utn.ejercicio6.Mesa;
+import edu.utn.ejercicio6.Reserva;
 
 /**
  *
@@ -54,6 +56,37 @@ public class TP5 {
         Computadora computadora1 = new Computadora("adfaasdaa", "963852", "400", "abc");
         propietario1.setComputadora(computadora1);
         System.out.println(computadora1);
+        
+        System.out.println("\nEjercicio 6:\n");
+        Mesa mesa1 = new Mesa(20, 4);
+        edu.utn.ejercicio6.Cliente cliente2 = new edu.utn.ejercicio6.Cliente("Fulano", "1234567890");
+        Reserva reserva1 = new Reserva("10/11/25", "20:00", mesa1);
+        reserva1.setCliente(cliente2);
+        System.out.println(reserva1);
+        
+        System.out.println("\nEjercicio 7:\n");
+        
+        
+        System.out.println("\nEjercicio 8:\n");
+        
+        
+        System.out.println("\nEjercicio 9:\n");
+        
+        
+        System.out.println("\nEjercicio 10:\n");
+        
+        
+        System.out.println("\nEjercicio 11:\n");
+        
+        
+        System.out.println("\nEjercicio 12:\n");
+        
+        
+        System.out.println("\nEjercicio 13:\n");
+        
+        
+        System.out.println("\nEjercicio 14:\n");
+        
     }
     
 }
