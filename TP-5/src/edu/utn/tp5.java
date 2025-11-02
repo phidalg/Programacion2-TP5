@@ -18,6 +18,8 @@ import edu.utn.ejercicio6.Reserva;
 import edu.utn.ejercicio7.Conductor;
 import edu.utn.ejercicio7.Motor;
 import edu.utn.ejercicio7.Vehiculo;
+import edu.utn.ejercicio8.Documento;
+import edu.utn.ejercicio8.FirmaDigital;
 
 /**
  *
@@ -75,7 +77,9 @@ public class TP5 {
         System.out.println(conductor1);
         
         System.out.println("\nEjercicio 8:\n");
-        
+        edu.utn.ejercicio8.Usuario usuario2 = new edu.utn.ejercicio8.Usuario("Fulano", "fulano@utn.edu.ar");
+        Documento documento1 = new Documento("Contrato", "Clausulas...", usuario2);
+        System.out.println(documento1);
         
         System.out.println("\nEjercicio 9:\n");
         
