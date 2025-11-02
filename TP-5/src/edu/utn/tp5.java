@@ -20,6 +20,9 @@ import edu.utn.ejercicio7.Motor;
 import edu.utn.ejercicio7.Vehiculo;
 import edu.utn.ejercicio8.Documento;
 import edu.utn.ejercicio8.FirmaDigital;
+import edu.utn.ejercicio9.CitaMedica;
+import edu.utn.ejercicio9.Paciente;
+import edu.utn.ejercicio9.Profesional;
 
 /**
  *
@@ -82,7 +85,12 @@ public class TP5 {
         System.out.println(documento1);
         
         System.out.println("\nEjercicio 9:\n");
-        
+        Paciente paciente1 = new Paciente("Fulano", "PAMI");
+        Profesional profesional1 = new Profesional("Doc", "Cirujano");
+        CitaMedica cita1 = new CitaMedica("2/11/2025", "10:00");
+        cita1.setPaciente(paciente1);
+        cita1.setProfesional(profesional1);
+        System.out.println(cita1);
         
         System.out.println("\nEjercicio 10:\n");
         
