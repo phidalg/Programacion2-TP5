@@ -2,6 +2,7 @@ package edu.utn;
 
 import edu.utn.ejercicio1.Pasaporte;
 import edu.utn.ejercicio1.Titular;
+import edu.utn.ejercicio10.CuentaBancaria;
 import edu.utn.ejercicio2.Bateria;
 import edu.utn.ejercicio2.Celular;
 import edu.utn.ejercicio2.Usuario;
@@ -93,6 +94,24 @@ public class TP5 {
         System.out.println(cita1);
         
         System.out.println("\nEjercicio 10:\n");
+        System.out.println("Se crean instancias de Titular, CuentaBancaria y ClaveSeguridad");
+        CuentaBancaria cuentaBancaria1 = new CuentaBancaria("123456789", 1000.00, "qwerty");
+        edu.utn.ejercicio10.Titular titular2 = new edu.utn.ejercicio10.Titular("Fulano", "12345678");
+        titular2.setCuentaBancaria(cuentaBancaria1);
+        System.out.println(titular2);
+        
+        System.out.println("\nIntento de cambiar la clave de seguridad con contraseña incorrecta:");
+        cuentaBancaria1.getClaveSeguridad().cambiarClave("aaaaa", "1234");
+        System.out.println("\nIntento de cambiar la clave de seguridad con contraseña correcta:");
+        cuentaBancaria1.getClaveSeguridad().cambiarClave("qwerty", "1234");
+        
+        System.out.println("\nIntento de retirar dinero con contraseña incorrecta:");
+        cuentaBancaria1.retirarDinero(500, "aaaa");
+        System.out.println("\nIntento de retirar dinero con contraseña correcta:");
+        cuentaBancaria1.retirarDinero(500, "1234");
+        
+        System.out.println("\nNuevo estado de la cuenta:");
+        System.out.println(cuentaBancaria1);
         
         
         System.out.println("\nEjercicio 11:\n");
