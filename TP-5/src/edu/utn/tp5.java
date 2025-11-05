@@ -2,13 +2,6 @@ package edu.utn;
 
 import edu.utn.ejercicio1.Pasaporte;
 import edu.utn.ejercicio1.Titular;
-import edu.utn.ejercicio10.CuentaBancaria;
-import edu.utn.ejercicio11.Artista;
-import edu.utn.ejercicio11.Cancion;
-import edu.utn.ejercicio11.Reproductor;
-import edu.utn.ejercicio12.Calculadora;
-import edu.utn.ejercicio12.Contribuyente;
-import edu.utn.ejercicio12.Impuesto;
 import edu.utn.ejercicio2.Bateria;
 import edu.utn.ejercicio2.Celular;
 import edu.utn.ejercicio2.Usuario;
@@ -26,10 +19,18 @@ import edu.utn.ejercicio7.Conductor;
 import edu.utn.ejercicio7.Motor;
 import edu.utn.ejercicio7.Vehiculo;
 import edu.utn.ejercicio8.Documento;
-import edu.utn.ejercicio8.FirmaDigital;
 import edu.utn.ejercicio9.CitaMedica;
 import edu.utn.ejercicio9.Paciente;
 import edu.utn.ejercicio9.Profesional;
+import edu.utn.ejercicio10.CuentaBancaria;
+import edu.utn.ejercicio11.Artista;
+import edu.utn.ejercicio11.Cancion;
+import edu.utn.ejercicio11.Reproductor;
+import edu.utn.ejercicio12.Calculadora;
+import edu.utn.ejercicio12.Contribuyente;
+import edu.utn.ejercicio12.Impuesto;
+import edu.utn.ejercicio13.CodigoQR;
+import edu.utn.ejercicio13.GeneradorQR;
 
 /**
  *
@@ -134,7 +135,9 @@ public class TP5 {
         Calculadora.calccular(impuesto1);
         
         System.out.println("\nEjercicio 13:\n");
-        
+        edu.utn.ejercicio13.Usuario usuario3 = new edu.utn.ejercicio13.Usuario("Fulano", "fulanito@mail.ar");
+        CodigoQR codigo1 = GeneradorQR.generar("1000", usuario3);
+        System.out.println(codigo1);
         
         System.out.println("\nEjercicio 14:\n");
         
