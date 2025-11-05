@@ -3,6 +3,9 @@ package edu.utn;
 import edu.utn.ejercicio1.Pasaporte;
 import edu.utn.ejercicio1.Titular;
 import edu.utn.ejercicio10.CuentaBancaria;
+import edu.utn.ejercicio11.Artista;
+import edu.utn.ejercicio11.Cancion;
+import edu.utn.ejercicio11.Reproductor;
 import edu.utn.ejercicio2.Bateria;
 import edu.utn.ejercicio2.Celular;
 import edu.utn.ejercicio2.Usuario;
@@ -113,9 +116,12 @@ public class TP5 {
         System.out.println("\nNuevo estado de la cuenta:");
         System.out.println(cuentaBancaria1);
         
-        
         System.out.println("\nEjercicio 11:\n");
-        
+        Artista artista1 = new Artista("Atahualpa Yupanqui", "Folklore");
+        Cancion cancion1 = new Cancion("El arriero va");
+        cancion1.setArtista(artista1);
+        System.out.println(cancion1);
+        Reproductor.reproducir(cancion1);
         
         System.out.println("\nEjercicio 12:\n");
         
