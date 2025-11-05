@@ -6,6 +6,9 @@ import edu.utn.ejercicio10.CuentaBancaria;
 import edu.utn.ejercicio11.Artista;
 import edu.utn.ejercicio11.Cancion;
 import edu.utn.ejercicio11.Reproductor;
+import edu.utn.ejercicio12.Calculadora;
+import edu.utn.ejercicio12.Contribuyente;
+import edu.utn.ejercicio12.Impuesto;
 import edu.utn.ejercicio2.Bateria;
 import edu.utn.ejercicio2.Celular;
 import edu.utn.ejercicio2.Usuario;
@@ -124,7 +127,11 @@ public class TP5 {
         Reproductor.reproducir(cancion1);
         
         System.out.println("\nEjercicio 12:\n");
-        
+        Contribuyente contribuyente1 = new Contribuyente("Fulano", "20-12345678-3");
+        Impuesto impuesto1 = new Impuesto(21.00);
+        impuesto1.setContribuyente(contribuyente1);
+        System.out.println(impuesto1);
+        Calculadora.calccular(impuesto1);
         
         System.out.println("\nEjercicio 13:\n");
         
