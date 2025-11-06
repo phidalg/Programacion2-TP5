@@ -31,6 +31,9 @@ import edu.utn.ejercicio12.Contribuyente;
 import edu.utn.ejercicio12.Impuesto;
 import edu.utn.ejercicio13.CodigoQR;
 import edu.utn.ejercicio13.GeneradorQR;
+import edu.utn.ejercicio14.EditorVideo;
+import edu.utn.ejercicio14.Proyecto;
+import edu.utn.ejercicio14.Render;
 
 /**
  *
@@ -140,7 +143,9 @@ public class TP5 {
         System.out.println(codigo1);
         
         System.out.println("\nEjercicio 14:\n");
-        
+        Proyecto proyecto1 = new Proyecto("Film", 119.5);
+        Render render1 = EditorVideo.exportar(".mkv", proyecto1);
+        System.out.println(render1);
     }
     
 }
